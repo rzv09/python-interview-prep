@@ -16,11 +16,15 @@ def list_methods():
 
 list_methods()
 
-def list_comprehension():
+def comprehensions():
     squares = [x**2 for x in range(10)]
     print(squares)
 
     combined_elements = [(x,y) for x in [1,2,3] for y in [3,1,4] if x != y]
     print(combined_elements)
 
-list_comprehension()
+    # for dictionaries
+    my_dict = {x: x**2 for x in (2, 4, 6)}
+    print(my_dict)
+
+comprehensions()
